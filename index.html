@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Restaurant</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="jquery.mobile-1.4.5.css"/>
+			<link rel="icon" href="icon.jpg" sizes="16x16" type="image/jpg">
+			<script src="jquery.js"></script>
+			<script src="jquery.mobile-1.4.5.js"></script>
+			
+			<style>
+				body{
+					font-family:time new roman;
+				}
+			</style>
+		</head>
+		
+		<body>
+		<!--	HOMEPAGE	-->
+			<div data-role="page" id="home">
+				<div data-role="panel" id="panel">
+					<div data-role="controlgroup">
+						<a href="#" data-role="button" data-theme="b">Chinese Plate</a>
+						<a href="#" data-role="button" data-theme="b">Indian Plate</a>
+						<a href="#" data-role="button" data-theme="b">Italian Plate</a>
+						<a href="#" data-role="button" data-theme="b">Mexican Plate</a>
+						<a href="#" data-role="button" data-theme="b">Muslim Plate</a>
+						<a href="#" data-role="button" data-theme="b">Thai Plate</a>
+						<a href="#" data-role="button" data-theme="b">Turkish Plate</a>
+					</div>
+				</div>
+				<div data-role="panel" id="option" data-position="right">
+					<div data-role="controlgroup">
+						<a href="#" data-role="button" data-theme="b">About</a>
+						<a href="#" data-role="button" data-theme="b">Contact</a>
+						<a href="#" data-role="button"data-theme="b">Find us</a>
+						<a href="#" data-role="button" data-theme="b">Latest Flavors</a>
+					</div>
+				</div>
+				
+				<div data-role="header" data-theme="b" data-content-theme="b">
+					<a href="#panel" data-icon="bars">Menu</a>
+					<h1>Restaurant</h1>
+					<a href="#option" data-icon="gear" class="ui-btn-right">Option</a>
+				</div>
+				
+				<div data-role="main" class="ui-content" style="color:orange;">
+					<img src="bg.jpg" width="100%" alt="banner"/>
+					<br/>
+					<a href="#" data-role="button" data-icon="action">Book Table Now</a>
+					<a href="#register" data-role="button" data-icon="bullets">Register</a>
+					<a href="#login" data-role="button" data-icon="navigation">Sign In</a>
+					<br/>
+					Subscribe for latest news
+					<input type="email" style="color:orange;" placeholder="Enter email address"/>
+					<input type="submit" value="Subscribe" data-icon="mail"/>
+				</div>
+				
+				<div data-role="footer" data-theme="b" data-content-theme="b" style="opacity:0.7;font-size:13px;">
+					<center>&copy; Allrightsreserved_AzweemGolamy_2018</center>
+				</div>
+			</div>
+			
+			<!--	Register	-->
+			<div data-role="page" id="register">
+				<div data-role="panel" id="panel">
+					<div data-role="controlgroup">
+						<a href="#" data-role="button" data-theme="b">Chinese Plate</a>
+						<a href="#" data-role="button" data-theme="b">Indian Plate</a>
+						<a href="#" data-role="button" data-theme="b">Italian Plate</a>
+						<a href="#" data-role="button" data-theme="b">Mexican Plate</a>
+						<a href="#" data-role="button" data-theme="b">Muslim Plate</a>
+						<a href="#" data-role="button" data-theme="b">Thai Plate</a>
+						<a href="#" data-role="button" data-theme="b">Turkish Plate</a>
+					</div>
+				</div>
+				<div data-role="panel" id="option" data-position="right">
+					<div data-role="controlgroup">
+						<a href="#" data-role="button" data-theme="b">About</a>
+						<a href="#" data-role="button" data-theme="b">Contact</a>
+						<a href="#" data-role="button"data-theme="b">Find us</a>
+						<a href="#" data-role="button" data-theme="b">Latest Flavors</a>
+					</div>
+				</div>
+				
+				<div data-role="header" data-theme="b" data-content-theme="b">
+					<a href="#panel" data-icon="bars">Menu</a>
+					<h1>Register</h1>
+					<a href="#option" data-icon="gear" class="ui-btn-right">Option</a>
+				</div>
+				
+				<div data-role="main" class="ui-content" style="color:orange;">
+					<center>
+						<h3>Be one of our happy customers</h3>
+					</center>
+					
+					<form method="post">
+						<label for="text-basic">First name</label>
+						<input type="text" name="text-basic" style="color:orange;" id="text-basic">
+						
+						<label for="text-basic">Last name</label>
+						<input type="text" name="text-basic" style="color:orange;" id="text-basic">
+						
+						<label for="date">Date of birth</label>
+						<input type="date" name="date" style="color:orange;" id="date">
+						
+						<br/>
+						
+						<label for="text-basic">Gender</label>
+						<div class="ui-field-contain ui-hide-label">
+							<input type="radio" name="radio-choice-v-3" id="radio-choice-v-3a" value="male" checked="checked">
+							<label for="radio-choice-v-3a">Male</label>
+							<input type="radio" name="radio-choice-v-3" id="radio-choice-v-3b" value="female">
+							<label for="radio-choice-v-3b">Female</label>
+						</div>
+						
+						<label for="date">Email (Username)</label>
+						<input type="email" name="email" style="color:orange;" id="email">
+						
+						<label for="password">Password:</label>
+						<input type="password" name="password" style="color:orange;" id="password" autocomplete="off">
+						
+						<label for="Confirm_password">Confirm Password:</label>
+						<input type="password" name="password" style="color:orange;" id="c_password" autocomplete="off">
+						
+						<label for="preferred plate">Preferred Plate</label>
+						<div class="ui-field-contain ui-hide-label">
+							<fieldset data-role="controlgroup">
+								<input type="checkbox" name="checkbox-v-3a" id="checkbox-v-3a">
+								<label for="checkbox-v-3a">Chinese</label>
+								<input type="checkbox" name="checkbox-v-3b" id="checkbox-v-3b">
+								<label for="checkbox-v-3b">Indian</label>
+								<input type="checkbox" name="checkbox-v-3c" id="checkbox-v-3c">
+								<label for="checkbox-v-3c">Italian</label>
+								<input type="checkbox" name="checkbox-v-3d" id="checkbox-v-3d">
+								<label for="checkbox-v-3d">Mexican</label>
+								<input type="checkbox" name="checkbox-v-3e" id="checkbox-v-3e">
+								<label for="checkbox-v-3e">Muslim</label>
+								<input type="checkbox" name="checkbox-v-3f" id="checkbox-v-3f">
+								<label for="checkbox-v-3f">Thai</label>
+								<input type="checkbox" name="checkbox-v-3g" id="checkbox-v-3g">
+								<label for="checkbox-v-3g">Turkish</label>
+							</fieldset>
+						</div>
+						
+						<center>
+							<label for="receive_email">Receive Email</label>
+							<div class="ui-field-contain ui-hide-label">
+								<select name="flip-7" id="flip-7" data-role="slider" data-mini="true">
+									<option value="Yes">Yes</option>
+									<option value="No">No</option>
+								</select>
+							</div>
+							
+							<div data-demo-html="true">
+								<input type="submit" value="Submit">
+								<input type="reset" value="Cancel">
+							</div>
+						</center>
+					</form>
+				</div>
+				
+				<div data-role="footer" data-theme="b" data-content-theme="b" style="opacity:0.7;font-size:13px;">
+					<center>&copy; Allrightsreserved_AzweemGolamy_2018</center>
+				</div>
+			</div>
+			
+			<!-- LOGIN	-->
+			<div data-role="page" id="login">
+				<div data-role="panel" id="panel">
+					<div data-role="controlgroup">
+						<a href="#" data-role="button" data-theme="b">Chinese Plate</a>
+						<a href="#" data-role="button" data-theme="b">Indian Plate</a>
+						<a href="#" data-role="button" data-theme="b">Italian Plate</a>
+						<a href="#" data-role="button" data-theme="b">Mexican Plate</a>
+						<a href="#" data-role="button" data-theme="b">Muslim Plate</a>
+						<a href="#" data-role="button" data-theme="b">Thai Plate</a>
+						<a href="#" data-role="button" data-theme="b">Turkish Plate</a>
+					</div>
+				</div>
+				<div data-role="panel" id="option" data-position="right">
+					<div data-role="controlgroup">
+						<a href="#" data-role="button" data-theme="b">About</a>
+						<a href="#" data-role="button" data-theme="b">Contact</a>
+						<a href="#" data-role="button"data-theme="b">Find us</a>
+						<a href="#" data-role="button" data-theme="b">Latest Flavors</a>
+					</div>
+				</div>
+				
+				<div data-role="header" data-theme="b" data-content-theme="b">
+					<a href="#panel" data-icon="bars">Menu</a>
+					<h1>Log In</h1>
+					<a href="#option" data-icon="gear" class="ui-btn-right">Option</a>
+				</div>
+				
+				<div data-role="main" class="ui-content" style="color:orange;">
+					<center>
+						<h3>Log in to access your account</h3>
+					</center>
+						
+					<form method="post">
+						<label for="date">Email (Username)</label>
+						<input type="email" name="email" style="color:orange;" id="email">
+						
+						<label for="password">Password:</label>
+						<input type="password" name="password" style="color:orange;" id="password" autocomplete="off">
+						
+						<div data-demo-html="true">
+							<input type="submit" value="Submit">
+							<input type="reset" value="Cancel">
+						</div>
+					</form>
+				</div>
+				
+				<div data-role="footer" data-theme="b" data-content-theme="b" style="opacity:0.7;font-size:13px;">
+					<center>&copy; Allrightsreserved_AzweemGolamy_2018</center>
+				</div>
+		</body>
+	</html>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
